@@ -5,20 +5,20 @@
 class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "1.2.5"
+  version "1.2.6"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.5/gituser_1.2.5_Darwin_x86_64.tar.gz"
-      sha256 "8e8622f0b3a3a78c1989c0dca6cfdaaf34d1bacdc984aa00eee66842ca53451e"
+    if Hardware::CPU.arm?
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.6/gituser_1.2.6_Darwin_arm64.tar.gz"
+      sha256 "b9aa51a6a3555817762ea370ba3b82df8d0f0890a061764dc45a44be7d1eaf1f"
 
       def install
         bin.install "gituser"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.5/gituser_1.2.5_Darwin_arm64.tar.gz"
-      sha256 "945e8fd273330bba19ba287846d3f32e9822923b71d6cdd1960455e1c7bf4458"
+    if Hardware::CPU.intel?
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.6/gituser_1.2.6_Darwin_x86_64.tar.gz"
+      sha256 "e9d71a2bf8d16da8e23377c3fd3494b8278f1ff37130e8349b54a514c3eaa8bb"
 
       def install
         bin.install "gituser"
@@ -28,16 +28,16 @@ class Gituser < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.5/gituser_1.2.5_Linux_x86_64.tar.gz"
-      sha256 "c28e1145fcd19be85b816849dbfef56f43e8965272e5a9f99d3b5c8b9ad2f272"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.6/gituser_1.2.6_Linux_x86_64.tar.gz"
+      sha256 "f0235721a67956aa7bf484cd1590bc8403a9fe735704f7a57df270afa2cf462d"
 
       def install
         bin.install "gituser"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.5/gituser_1.2.5_Linux_arm64.tar.gz"
-      sha256 "2dc806e1caa98a6a85c7a325a8ebb686802c46a976f61bd367d7728e28bd4601"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.2.6/gituser_1.2.6_Linux_arm64.tar.gz"
+      sha256 "a35c1a38e8640b4fe039eea1d25123b38f686313f857382c0d79ced1638b9b72"
 
       def install
         bin.install "gituser"
