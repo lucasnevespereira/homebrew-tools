@@ -5,20 +5,20 @@
 class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "1.3.1"
+  version "1.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.1/gituser_1.3.1_Darwin_x86_64.tar.gz"
-      sha256 "f4ec210af8637a42812cdde319180f7e1bbcf8302fdfcbeb08c56e41824d3f31"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.2/gituser_1.3.2_Darwin_x86_64.tar.gz"
+      sha256 "fc6c752fc2f4a3265a8fb3a00eee7110b6c032155aa618861d13fb61e314478b"
 
       def install
         bin.install "gituser"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.1/gituser_1.3.1_Darwin_arm64.tar.gz"
-      sha256 "9c6520a494ff6f23462dcaebaa7705339cdb0d6e956a1891fe83be17c65b5662"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.2/gituser_1.3.2_Darwin_arm64.tar.gz"
+      sha256 "0924dab917c2039dcfef116c201bbb63829c05563c72b5920164d6cd9bfac494"
 
       def install
         bin.install "gituser"
@@ -27,17 +27,17 @@ class Gituser < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.1/gituser_1.3.1_Linux_x86_64.tar.gz"
-      sha256 "287d11d4b3295bd870d2e69fefe8770c0102a2c1b80a6c841a56e953e3c14c27"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.2/gituser_1.3.2_Linux_arm64.tar.gz"
+      sha256 "968dd9a7b6a520b1fea89a6bb5694458ed55aa3fa2478ff10b31cd5ee71637e4"
 
       def install
         bin.install "gituser"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.1/gituser_1.3.1_Linux_arm64.tar.gz"
-      sha256 "54d4475957e5addd268ffa0c77fb6032f91a7aabe2eef5251e25286f5bf48fbd"
+    if Hardware::CPU.intel?
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.2/gituser_1.3.2_Linux_x86_64.tar.gz"
+      sha256 "24e1a38dd36e161035e40676ef4318f3f51d39e965748353b6d5417797f017ab"
 
       def install
         bin.install "gituser"
