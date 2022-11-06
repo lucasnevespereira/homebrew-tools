@@ -19,5 +19,5 @@ brew install gituser
 Upgrade the Gituser CLI to the latest version:
 
 ```
-brew upgrade gituser
+brew upgrade lucasnevespereira/tools/gituser
 ```
