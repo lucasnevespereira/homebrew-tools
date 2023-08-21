@@ -5,39 +5,29 @@
 class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "1.3.4"
+  version "1.3.5"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.4/gituser_1.3.4_Darwin_x86_64.tar.gz"
-      sha256 "eecf548363389c3dcd4588df92c41d0fe52f2f86a82504d625e5685d9469a516"
+    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.5/gituser_1.3.5_darwin_all.tar.gz"
+    sha256 "f6e46c80b434271e30998319a751e0a0df115afb13c8d4509b1a76671b3db50b"
 
-      def install
-        bin.install "gituser"
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.4/gituser_1.3.4_Darwin_arm64.tar.gz"
-      sha256 "9972578a365628da3b00811acc69162531b9719fbd5a12df2a58d4352e222032"
-
-      def install
-        bin.install "gituser"
-      end
+    def install
+      bin.install "gituser"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.4/gituser_1.3.4_Linux_x86_64.tar.gz"
-      sha256 "0dfa1e6a72d5f98f22e9d74859b29511f40d001e5ce05c13271b32b2054633a8"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.5/gituser_1.3.5_linux_amd64.tar.gz"
+      sha256 "4e9145441f8614fcede992cb875f3d5422e08e11e47e0fcc7abbd7a588517e36"
 
       def install
         bin.install "gituser"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.4/gituser_1.3.4_Linux_arm64.tar.gz"
-      sha256 "a8bd5a3d8cd5583b301c6a6533d427f0ebf5729acfb29c17cd663be960267496"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.3.5/gituser_1.3.5_linux_arm64.tar.gz"
+      sha256 "21f3641dfa154a2cbbaa935dd6752178e6d580ba2fc6e8b4663cf5edeabdb618"
 
       def install
         bin.install "gituser"
