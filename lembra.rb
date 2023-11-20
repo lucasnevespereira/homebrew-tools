@@ -5,11 +5,11 @@
 class Lembra < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "0.0.2"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.2/lembra_0.0.2_darwin_all.tar.gz"
-    sha256 "3e1c4818d4657bd5061fd3024310a60c4213e0e1dac6bbcbd6023bed22ec62dd"
+    url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.4/lembra_0.0.4_darwin_all.tar.gz"
+    sha256 "6b2418b3614ecef189c7e5af48559d28702398be120f18376a6cf35626944dc9"
 
     def install
       bin.install "lembra"
@@ -18,16 +18,16 @@ class Lembra < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.2/lembra_0.0.2_linux_arm64.tar.gz"
-      sha256 "f8c6576119ba15e25a4394d47366a8be6123740aa3b2cd5839766e649f3e5063"
+      url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.4/lembra_0.0.4_linux_arm64.tar.gz"
+      sha256 "d7ffe02fd2c0e47a3d2c5cf8e43ffc55bfaf53396c969b30709adb1026cb9717"
 
       def install
         bin.install "lembra"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.2/lembra_0.0.2_linux_amd64.tar.gz"
-      sha256 "ea703e2ea1bfed1f41df6e295cdc0c65dd6b43fc5f5f6ba31bc9af4bb57f65be"
+      url "https://github.com/lucasnevespereira/lembra/releases/download/v0.0.4/lembra_0.0.4_linux_amd64.tar.gz"
+      sha256 "7d8992f6e10342b49b12068059ca72aa77ffb9959c53329858bd4a0295b41e89"
 
       def install
         bin.install "lembra"
