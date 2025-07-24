@@ -6,6 +6,7 @@ class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
   version "v1.5.0"
+  disable! date: "2025-07-25", because: "the cask should be used now instead", replacement_cask: "gituser"
 
   on_macos do
     url "https://github.com/lucasnevespereira/go-gituser/releases/download/vv1.5.0/gituser_v1.5.0_darwin_all.tar.gz"
