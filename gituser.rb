@@ -5,11 +5,11 @@
 class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "1.4.1"
+  version "1.5.0"
 
   on_macos do
-    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.4.1/gituser_1.4.1_darwin_all.tar.gz"
-    sha256 "ccaff42a91dbeca96ff63532e9d9cfdf4bd70b5a2c51da861b31844bf78bbfe5"
+    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_darwin_all.tar.gz"
+    sha256 "f6220126614d1ddeb717eef6b81fe7ceea21f37523bde0f56945f96d42a96958"
 
     def install
       bin.install "gituser"
@@ -18,16 +18,16 @@ class Gituser < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.4.1/gituser_1.4.1_linux_arm64.tar.gz"
-      sha256 "63062eed5ac731b015ba81dd662a186607be8c4b5b510841cd0e9e8dd0d7451a"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_linux_arm64.tar.gz"
+      sha256 "f6220126614d1ddeb717eef6b81fe7ceea21f37523bde0f56945f96d42a96958"
 
       def install
         bin.install "gituser"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.4.1/gituser_1.4.1_linux_amd64.tar.gz"
-      sha256 "cd2ffa89ebea211ccd3ecaf4523b2d3f585772b05afd53f61e873ebb1626a86e"
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_linux_amd64.tar.gz"
+      sha256 "f6220126614d1ddeb717eef6b81fe7ceea21f37523bde0f56945f96d42a96958"
 
       def install
         bin.install "gituser"
