@@ -14,7 +14,7 @@ cask "gituser" do
     url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_darwin_all.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-    sha256 "250256ab5d03efc7896ef4b4352d5325039cc6d419364a3a83af0712dd002b4f"
+    sha256 "193e09dc44520d7952b7c7fb360d67f49f7ffcca3d596234f1db183886523810"
   end
 
   on_linux do
@@ -22,13 +22,13 @@ cask "gituser" do
       url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_linux_amd64.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-      sha256 "a6d46324f7fc0a71eaba0e38ded2e47080f064d3358c90548ff6d47e2fe120b8"
+      sha256 "dd238ab5c386d50c3c3f1b5c3dbeb39907e14d945ae703a063b5336a20bd5d3f"
     end
     on_arm do
       url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.0/gituser_1.5.0_linux_arm64.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-      sha256 "4dd3fde3a004717e434f9f6fa0c85c86c4727c53e771d91289fb2c45fe319ac1"
+      sha256 "b20346bebcb093d3ebf7ebe99c4fc78b4d5583f642cec1faf92b3f0820ec21e3"
     end
   end
 
