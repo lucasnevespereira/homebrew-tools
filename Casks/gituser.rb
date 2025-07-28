@@ -2,7 +2,7 @@
 cask "gituser" do
   desc ""
   homepage ""
-  version "1.5.2"
+  version "1.5.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,24 +11,24 @@ cask "gituser" do
   binary "gituser"
 
   on_macos do
-    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.2/gituser_1.5.2_darwin_all.tar.gz",
+    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.3/gituser_1.5.3_darwin_all.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-    sha256 "d9e6130b44f0f6d81fd43047cf01318af5b2ed460488b1209fbe4fb579b35bdf"
+    sha256 "cd6f1c8c3baa396645b8e7c987896f0daeda34066168249fc5e7f8f88595b114"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.2/gituser_1.5.2_linux_amd64.tar.gz",
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.3/gituser_1.5.3_linux_amd64.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-      sha256 "eddcde7ce04ac93556f8b50b75538c93ee8eafed2c3653dd350ea556abafa3c7"
+      sha256 "27ff355052570c7d1b596cf8f3e46963afb5c1300023137d2c8ed78cdbf2138e"
     end
     on_arm do
-      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.2/gituser_1.5.2_linux_arm64.tar.gz",
+      url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.5.3/gituser_1.5.3_linux_arm64.tar.gz",
         verified: "github.com/lucanevespereira/go-gituser",
         using: :homebrew_curl
-      sha256 "cc03b5c41f2eedcb7c55234a14d762cba694b2dfe7a4a0b60327cc95824d3853"
+      sha256 "fd63cda981496a54d18e5832ccecf02222369e0175f7aae3bff0153e6b859f55"
     end
   end
 
