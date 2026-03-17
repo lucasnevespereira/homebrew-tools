@@ -37,3 +37,11 @@ Upgrade the Lembra CLI to the latest version:
 ```
 brew upgrade lucasnevespereira/tools/lembra
 ```
+
+## Logmx
+
+Install [Logmx](https://github.com/lucasnevespereira/logmx):
+
+```sh
+brew install lucasnevespereira/tools/logmx
+```
