@@ -1,7 +1,7 @@
   class Logmx < Formula
     desc "Aggregate and stream logs from multiple platforms"
     homepage "https://github.com/lucasnevespereira/logmx"
-    url "https://github.com/lucasnevespereira/logmx/archive/refs/tags/v0.1.0.tar.gz"
+    url "https://github.com/lucasnevespereira/logmx/archive/refs/tags/v0.2.0.tar.gz"
     sha256 ""
     license "MIT"
 
