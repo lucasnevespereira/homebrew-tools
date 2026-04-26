@@ -5,13 +5,13 @@
 class Gituser < Formula
   desc ""
   homepage "https://github.com/lucasnevespereira/homebrew-tools"
-  version "1.4.1"
+  version "1.5.4-beta.1"
   disable! date: "2025-07-25", because: "the cask should be used now instead", replacement_cask: "gituser"
 
 
   on_macos do
-    url "https://github.com/lucasnevespereira/go-gituser/releases/download/v1.4.1/gituser_1.4.1_darwin_all.tar.gz"
-    sha256 "ccaff42a91dbeca96ff63532e9d9cfdf4bd70b5a2c51da861b31844bf78bbfe5"
+    url "https://github.com/lucasnevespereira/go-gituser/archive/refs/tags/v1.5.4-beta.1.tar.gz"
+    sha256 "af13765e7739080c8d97421b41b2799e66d2ad56f52b7aec9578ea98f88bce0c"
 
     def install
       bin.install "gituser"
