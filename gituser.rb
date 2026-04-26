@@ -1,8 +1,8 @@
 class Gituser < Formula
   desc "Switch between git accounts easily"
   homepage "https://github.com/lucasnevespereira/go-gituser"
-  url "https://github.com/lucasnevespereira/go-gituser/archive/refs/tags/v1.5.4.tar.gz"
-  sha256 "64b666ef7a441bc20e384690146c4a6abfc86d96cacaf57af5e4150154de7871"
+  url "https://github.com/lucasnevespereira/go-gituser/archive/refs/tags/v1.5.5.tar.gz"
+  sha256 "97a999994aabb51082cbeecbfe4163e9501682c13a086b3b12a662392c90854d"
   license "MIT"
 
   depends_on "go" => :build
