@@ -1,8 +1,8 @@
 class Canape < Formula
   desc "Control the TV and share the Wi-Fi on any network"
   homepage "https://github.com/lucasnevespereira/canape"
-  url "https://github.com/lucasnevespereira/canape/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "242e05b2bcb4aa4889b02d004b16ac5ba56d001f03e3418ab7c20bc1a25320d7"
+  url "https://github.com/lucasnevespereira/canape/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "cb8185b1387937c0a831bc7e18125fe47d97adc15793801817d80242928d63f2"
   license "MIT"
 
   depends_on "go" => :build
