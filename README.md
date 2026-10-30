@@ -45,3 +45,11 @@ Install [Logmx](https://github.com/lucasnevespereira/logmx):
 ```sh
 brew install lucasnevespereira/tools/logmx
 ```
+
+## Canape
+
+Install [Canape](https://github.com/lucasnevespereira/canape):
+
+```sh
+brew install lucasnevespereira/tools/canape
+```
